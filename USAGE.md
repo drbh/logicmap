@@ -127,7 +127,7 @@ fn main() {
     println!("{:#?}", kitty2);
     println!("{:#?}", report2);
 }
-``
+```
 
 ## Output
 
