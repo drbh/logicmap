@@ -1,13 +1,17 @@
 [package]
-name = "logicmaps"
-version = "0.1.0"
+name = "logicmap"
+version = "0.0.0"
 authors = ["David Holtz <david.richard.holtz@gmail.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Simple computational boolean logic data structure"
+keywords = ["logic", "map"]
+homepage = "https://github.com/drbh/logicmap"
+repository = "https://github.com/drbh/logicmap.git"
+readme = "README.md"
+license = "MIT"
 
 [dependencies]
 serde = {version = "1.0.0", features = ["derive"]}
-
 serde_json = "1.0"
 jsonpath_lib = "0.2.4"
