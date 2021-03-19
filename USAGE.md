@@ -64,7 +64,7 @@ We can use these structures to build as many Cats as we want 😺 and articulate
 
 In the following example we'll build the most simple logic map possible. Its a single `card`, with a single `statement` with a single `brick`. We're just checking if the cat is the color we want.
 
-````rust
+```rust
 //
 fn main() {
     // first we'll define the match we want.
@@ -181,4 +181,4 @@ CardResult {
         },
     ],
 }
-````
+```
