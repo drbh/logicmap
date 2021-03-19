@@ -33,16 +33,6 @@ impl<T> std::fmt::Debug for Brick<T> {
     }
 }
 
-// impl<T> Serialize for Brick<T> {
-//     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-//     where
-//         S: Serializer,
-//     {
-//         let mut s = String::new();
-//         s.serialize(serializer)
-//     }
-// }
-
 impl<T> Brick<T> {
     pub fn report(self) -> ExpResult {
         (self.expcheck)(self.input)
@@ -95,4 +85,9 @@ impl<T> Card<T> {
             met_flag: met_flag,
         }
     }
+}
+
+pub trait Config<T> {
+    fn expression_function(&self) -> Box<dyn Fn(T) -> ExpResult + 'static>;
+    fn name(&self) -> String;
 }

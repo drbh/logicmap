@@ -1,5 +1,0 @@
-use logicmaps::*;
-
-fn main() {
-    //
-}
