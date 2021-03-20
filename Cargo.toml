@@ -1,6 +1,6 @@
 [package]
 name = "logicmap"
-version = "0.0.0"
+version = "0.0.1"
 authors = ["David Holtz <david.richard.holtz@gmail.com>"]
 edition = "2018"
 
