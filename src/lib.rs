@@ -91,3 +91,9 @@ pub trait Config<T> {
     fn expression_function(&self) -> Box<dyn Fn(T) -> ExpResult + 'static>;
     fn name(&self) -> String;
 }
+
+impl<T> std::fmt::Debug for dyn Config<T> {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.name())
+    }
+}
